@@ -73,23 +73,24 @@ main {
     flex-wrap: nowrap;
     padding: 20px 0;
 }
-
 .category {
-    flex: 1;
-    height: 300px;
-    background-color: #ffffff;
-    border: 1px solid #d32f2f;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 100%;
+    height: 250px; /* Adjust this as needed */
     background-size: cover;
     background-position: center;
+    text-align: center;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    text-decoration: none;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
+.category h2, .category p {
+    position: relative;
+    z-index: 2;  /* Ensures text appears above the background */
+}
+
 
 .category::before {
     content: "";
