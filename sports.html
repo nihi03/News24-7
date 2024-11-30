@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National News - News 24/7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <h1>News 24/7</h1>
+      </div>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="national.html">National</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="entertainment.html">Entertainment and Lifestyle</a></li>
+          <li><a href="business.html">Business and Education</a></li>
+        </ul>
+      </nav>
+      <div class="subscribe">
+        <button class="subscribe-btn">Subscribe</button>
+        <div id="subscribe-message" class="subscribe-message" style="display: none;">
+            Thanks for subscribing to News 24/7 newsletter!
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="category-news">
+      <h2>Sports News</h2>
+
+      <!-- News Item 1 -->
+      <div class="news-item">
+        <img src="https://cricheroes-media-mumbai.s3.ap-south-1.amazonaws.com/user_profile/1681615494216_fRP9XbaG0cpd.jpeg?width=1920&quality=75&format=auto" height="350 px" alt="sports News 1">
+        <div class="news-content">
+          <h3>PBG Chargers Triumph at Rashtrapati Bhavan Cricket Tournament:<br>
+            Fostering Team Spirit and Excellence in the President’s Estate</h3>
+          
+            <p>The Kendriya Vidyalaya cricket ground in the President’s Estate was abuzz with energy and excitement as the PBG Chargers emerged victorious in the 8th Rashtrapati Bhavan League (RBL) T20 Cricket Tournament. The nail-biting finale saw the Chargers outclass the Delhi Police Challengers, successfully chasing a target of 155 runs with five balls to spare.
+            <br><br>The tournament, an annual highlight in the Rashtrapati Bhavan calendar, brought together ten teams from various departments, celebrating sportsmanship, teamwork, and camaraderie. Over the course of 23 matches played in the period 03-02-2024 to 10-03-2024, the players balanced their professional responsibilities with their passion for cricket, delivering thrilling performances and unforgettable moments.
+            <br><br><u><i>A Thrilling Finale</i></u>
+            <br><br>The grand finale witnessed intense competition as the Delhi Police Challengers posted a strong total of 155/6 in 20 overs, powered by their disciplined batting. In response, the PBG Chargers showcased remarkable grit and teamwork. Key contributions by Dafadar Hardeep Ohlyan and Sandeep Kumar ensured the Chargers reached the target at 157/4 in 19.1 overs, clinching a memorable six-wicket victory and lifting the coveted RBL Trophy.
+            <br><br><u><i>Tournament Highlights</i></u>
+            <br><br>The tournament was a platform for extraordinary talent and dedication, with players shining in every match:
+            <br><br>Top Performer: Ravi Dogra (President Secretariat Avengers) scored a phenomenal 302 runs and claimed 12 wickets, establishing himself as the tournament’s standout all-rounder.
+            <ul>
+                <li>Best Bowler: Pawan Sabharwal (Delhi Police Challengers) led the bowling charts with 14 wickets.</li>
+                <li>Best Fielder: Navin Kumar impressed with his agility and consistency.</li>
+                <li>Most Sixes: Naveen (PEC Kings), Imran (CPWD Risers), and Ravi Dogra (President Secretariat Avengers) thrilled spectators with their power-hitting.</li>
+                <li>Highest Strike Rate: Imran (CPWD Risers) dominated with a blistering strike rate of 241.67 across three innings.</li>
+            </ul>
+            The President Secretariat Avengers also earned distinction with the tournament’s highest net run rate of 3.687, highlighting their dominance throughout.
+            <br><br><i>More Than Just Cricket</i>
+            <br><br>What makes the RBL T20 Tournament unique is its spirit of inclusivity. None of the participants are professional cricketers—they are government employees who carved time out of their busy schedules to compete. This commitment underscores the dedication and team spirit of the Rashtrapati Bhavan workforce, translating seamlessly from the cricket field to the workplace.
+            <br><br><i>A Vision for the Future</i>
+            <br><br>The RBL T20 Tournament is more than just a sporting event; it is a celebration of unity, teamwork, and shared purpose. It inspires employees to collaborate effectively, fostering a sense of community and motivation that extends into their professional lives.
+            <br><br>Looking ahead, there is a growing call to enhance the tournament’s reach by introducing live coverage on platforms like YouTube and social media. This would enable supporters to cheer for their teams from their workplaces or homes, creating an inclusive experience similar to national and international cricket events.
+            <br><br>8th RBL T20 Cricket Tournament was a resounding success, reinforcing the vibrant sporting culture of the President’s Estate. As the community eagerly awaits next year’s edition, the triumph of the PBG Chargers stands as a shining example of what can be achieved through dedication, teamwork, and a shared love for the game.
+            </p>
+          <span class="author">By Anurag Sharma | Location : New Delhi | Date :24 November, 2024</span>
+        </div>
+      </div>
+      <br>
+      <p>Watch the entire match below!</p>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4VNNuJ3BwCc?si=7Q2uoR3_EDj0OD-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><hr><br>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="about">
+        <h3>About Us</h3>
+        <p>News 24/7 is your go-to source for the latest headlines across National, International, Sports, Entertainment, and Business news.</p>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@news247.com</p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 News 24/7. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    
+window.addEventListener('scroll', handleScrollAnimation);
+handleScrollAnimation(); // Initial call for already visible sections
+
+// Function to show the subscribe message
+document.querySelector('.subscribe-btn').addEventListener('click', function() {
+    // Get the subscribe message div
+    const message = document.getElementById('subscribe-message');
+    
+    // Show the message
+    message.style.display = 'block';
+    
+    // Optionally, hide the subscribe button after click
+    document.querySelector('.subscribe-btn').style.display = 'none';
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News 24/7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <h1>News 24/7</h1>
+      </div>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="national.html">National</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="entertainment.html">Entertainment and Lifestyle</a></li>
+          <li><a href="business.html">Business and Education</a></li>
+        </ul>
+      </nav>
+      <div class="subscribe">
+        <button class="subscribe-btn">Subscribe</button>
+        <div id="subscribe-message" class="subscribe-message" style="display: none;">
+            Thanks for subscribing to News 24/7 newsletter!
+        </div>
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="categories">
+        <div class="category" style="background-image: url('https://th.bing.com/th/id/R.71f79b663442c5888e4d79468062e3e0?rik=cJjMYjiT3NagEA&riu=http%3a%2f%2fbloximages.chicago2.vip.townnews.com%2ftctimes.com%2fcontent%2ftncms%2fassets%2fv3%2feditorial%2f3%2f3e%2f33e1903e-51cd-11e2-9478-0019bb2963f4%2f50df0d93890dc.image.jpg&ehk=aj75zqEHUod3L1LnTibwBCBFJPDGYTp1P5R%2fBeJNnLk%3d&risl=&pid=ImgRaw&r=0');">
+            <a href="national.html">
+                <h2>National News</h2>
+                <p>Politics, governance, and local updates.</p>
+            </a>
+        </div>
+        <div class="category" style="background-image: url('https://img.freepik.com/free-vector/abstract-sport-background-flat-style_23-2148220193.jpg');">
+            <a href="sports.html">
+                <h2>Sports News</h2>
+                <p>Sports scores, athlete profiles, and events.</p>
+            </a>
+        </div>
+        <div class="category" style="background-image: url('https://i.ytimg.com/vi/cicvCufaGlY/maxresdefault.jpg');">
+            <a href="entertainment.html">
+                <h2>Entertainment and Lifestyle News</h2>
+                <p>Film, fashion, lifestyle articles.</p>
+            </a>
+        </div>
+        <div class="category" style="background-image: url('https://www.abdn.ac.uk/business/blog/images/shutterstock_1060169840.jpg');">
+            <a href="business.html">
+                <h2>Business and Education News</h2>
+                <p>Business reports and economic updates.</p>
+            </a>
+        </div>
+    </section>
+    
+    
+
+    <section class="trending-videos">
+      <h2>Trending News Videos</h2>
+      <div class="video-container">
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lZMtf5qfMhg?si=YMc1KoR6dUM0jHjh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>Delhi Air Pollution: The AQI outside this house is over 400, but inside the house, it is only 15.</p>
+        </div>
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/O3nrIHumOWg?si=2BCWiGlLKpm8zzJJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>Breaking:Donald Trump wins US election in monumental political comeback</p>
+        </div>
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hSA9OHwYPWU?si=So0gZ_RKFRoIixDX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>Local Heroes: Athletes Share Their Inspiring Stories</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="about">
+        <h3>About Us</h3>
+        <p>We bring the latest and most relevant news from around the world, 24/7.</p>
+      </div>
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Email us at info@news247.com</p>
+      </div>
+      <div class="social">
+        <h3>Follow Us</h3>
+        <p>Facebook | Twitter | Instagram</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Hover effect for category cards
+const categories = document.querySelectorAll('.category');
+
+categories.forEach(category => {
+    category.addEventListener('mouseover', () => {
+        category.style.transform = 'scale(1.05)';  // Slight zoom effect
+        category.style.transition = 'transform 0.3s ease';  // Smooth transition
+    });
+
+    category.addEventListener('mouseout', () => {
+        category.style.transform = 'scale(1)';  // Reset zoom effect
+    });
+});
+
+// Smooth scroll for category links
+const links = document.querySelectorAll('.category a');
+
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();  // Prevent default link behavior
+
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+// Fade-in effect for categories on page load
+window.addEventListener('load', () => {
+    const categories = document.querySelectorAll('.category');
+    categories.forEach((category, index) => {
+        setTimeout(() => {
+            category.style.opacity = '1';
+            category.style.transition = 'opacity 0.5s ease-in-out';
+        }, index * 200); // Delay each category's fade-in
+    });
+});
+
+// Active link highlighting
+const categoryLinks = document.querySelectorAll('.category a');
+
+categoryLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        categoryLinks.forEach(link => link.classList.remove('active')); // Remove active class from all links
+        link.classList.add('active'); // Add active class to clicked link
+    });
+});
+
+// Scroll animation for category sections
+const sections = document.querySelectorAll('.category');
+
+function handleScrollAnimation() {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionBottom = section.getBoundingClientRect().bottom;
+        const isInView = sectionTop < window.innerHeight && sectionBottom > 0;
+
+        if (isInView) {
+            section.classList.add('animate'); // Add class to animate
+        } else {
+            section.classList.remove('animate'); // Remove class if not in view
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScrollAnimation);
+handleScrollAnimation(); // Initial call for already visible sections
+
+// Function to show the subscribe message
+document.querySelector('.subscribe-btn').addEventListener('click', function() {
+    // Get the subscribe message div
+    const message = document.getElementById('subscribe-message');
+    
+    // Show the message
+    message.style.display = 'block';
+    
+    // Optionally, hide the subscribe button after click
+    document.querySelector('.subscribe-btn').style.display = 'none';
+});
+
+  </script>
+</body>
+</html>
