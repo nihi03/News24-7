@@ -33,34 +33,23 @@
 
   <main>
     <section class="categories">
-        <div class="category" style="background-image: url('https://th.bing.com/th/id/R.71f79b663442c5888e4d79468062e3e0?rik=cJjMYjiT3NagEA&riu=http%3a%2f%2fbloximages.chicago2.vip.townnews.com%2ftctimes.com%2fcontent%2ftncms%2fassets%2fv3%2feditorial%2f3%2f3e%2f33e1903e-51cd-11e2-9478-0019bb2963f4%2f50df0d93890dc.image.jpg&ehk=aj75zqEHUod3L1LnTibwBCBFJPDGYTp1P5R%2fBeJNnLk%3d&risl=&pid=ImgRaw&r=0');">
-            <a href="national.html">
-                <h2>National News</h2>
-                <p>Politics, governance, and local updates.</p>
-            </a>
-        </div>
-        <div class="category" style="background-image: url('https://img.freepik.com/free-vector/abstract-sport-background-flat-style_23-2148220193.jpg');">
-            <a href="sports.html">
-                <h2>Sports News</h2>
-                <p>Sports scores, athlete profiles, and events.</p>
-            </a>
-        </div>
-        <div class="category" style="background-image: url('https://i.ytimg.com/vi/cicvCufaGlY/maxresdefault.jpg');">
-            <a href="entertainment.html">
-                <h2>Entertainment and Lifestyle News</h2>
-                <p>Film, fashion, lifestyle articles.</p>
-            </a>
-        </div>
-        <div class="category" style="background-image: url('https://www.abdn.ac.uk/business/blog/images/shutterstock_1060169840.jpg');">
-            <a href="business.html">
-                <h2>Business and Education News</h2>
-                <p>Business reports and economic updates.</p>
-            </a>
-        </div>
+        <a href="national.html" class="category" style="background-image: url('https://th.bing.com/th/id/R.71f79b663442c5888e4d79468062e3e0?rik=cJjMYjiT3NagEA&riu=http%3a%2f%2fbloximages.chicago2.vip.townnews.com%2ftctimes.com%2fcontent%2ftncms%2fassets%2fv3%2feditorial%2f3%2f3e%2f33e1903e-51cd-11e2-9478-0019bb2963f4%2f50df0d93890dc.image.jpg&ehk=aj75zqEHUod3L1LnTibwBCBFJPDGYTp1P5R%2fBeJNnLk%3d&risl=&pid=ImgRaw&r=0');">
+            <h2>National News</h2>
+            <p>Politics, governance, and local updates.</p>
+        </a>
+        <a href="sports.html" class="category" style="background-image: url('https://img.freepik.com/free-vector/abstract-sport-background-flat-style_23-2148220193.jpg');">
+            <h2>Sports News</h2>
+            <p>Sports scores, athlete profiles, and events.</p>
+        </a>
+        <a href="entertainment.html" class="category" style="background-image: url('https://i.ytimg.com/vi/cicvCufaGlY/maxresdefault.jpg');">
+            <h2>Entertainment and Lifestyle News</h2>
+            <p>Film, fashion, lifestyle articles.</p>
+        </a>
+        <a href="business.html" class="category" style="background-image: url('https://www.abdn.ac.uk/business/blog/images/shutterstock_1060169840.jpg');">
+            <h2>Business and Education News</h2>
+            <p>Business reports and economic updates.</p>
+        </a>
     </section>
-    
-    
-
     <section class="trending-videos">
       <h2>Trending News Videos</h2>
       <div class="video-container">
@@ -79,7 +68,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <div class="footer-content">
       <div class="about">
@@ -99,7 +87,6 @@
   <script>
     // Hover effect for category cards
 const categories = document.querySelectorAll('.category');
-
 categories.forEach(category => {
     category.addEventListener('mouseover', () => {
         category.style.transform = 'scale(1.05)';  // Slight zoom effect
